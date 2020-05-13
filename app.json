@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "B. Filmes",
+    "slug": "b-filmes-tmdb",
+    "description": " B. Filmes: seu buscador de filmes, usamos  banco de dados The Movie Database (TMDb).",
+    "version": "0.0.1",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./app/assets/images/icon.png",
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "githubUrl": "https://github.com/michellykaren"
+  }
+}
