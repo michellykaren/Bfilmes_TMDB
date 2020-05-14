@@ -37,19 +37,20 @@ Clone ou baixe o projeto
 
 # Requisitos
 ## done
-- [x] Disponíbilizar o app para as plataformas Android e iOS utilizando React Native;
+- [x] Disponíbilizar o app para as plataformas Android e iOS utilizando React Native
 - [x] Utilizar react-navigation 
 - [x] Utilizar Redux
-- [x] Utilizar a API do The Movie DB;
-- [x] Exibir diferentes categorias de filmes;
-- [x] Permitir a busca de filmes por nome;
-- [x] Mostrar detalhes dos filmes;
-- [x] Uso de ferramenta de versionamento Git.
-- [x] Opções de acessibilidade:
+- [x] Utilizar a API do The Movie DB
+- [x] Exibir diferentes categorias de filmes
+- [x] Permitir a busca de filmes por nome
+- [x] Mostrar detalhes dos filmes
+- [x] Uso de ferramenta de versionamento Git
+- Opções de acessibilidade
 - - [x] Aumentar e diminuir imagens
-- - [ ] Aumentar, diminuir e restaurar a fonte;
-- - [ ] Uso de leitores de telas (Talkback para Android e VoiceOver para iOS).
-- - [ ] Alto contraste;
-- [x] Boa UI/UX;
-- [ ] Uso do redux-saga.
+- - [ ] Aumentar, diminuir e restaurar a fonte
+- - [ ] Uso de leitores de telas (Talkback para Android e VoiceOver para iOS)
+- - [ ] Alto contraste
+- [x] Boa UI/UX
+- [ ] Uso do redux-saga
+- [x] Segurança de chaves
 
