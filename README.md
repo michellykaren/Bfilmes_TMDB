@@ -16,7 +16,7 @@ Um projeto de um aplicativo de busca de filmes react-native com a API The Movie 
 - para acessar projeto com expo https://expo.io/@michellykaren/b-filmes-tmdb
 - QRCode para utilizar direto pelo celular (Androis ou IOS), baixe Expo Client na AppStore ou PlayStore e escaneie o QR abaixo:
 <p align="center">
-  <img alt="QRCode Expo" src="./QRCode.jpg" height="100" width="100" />
+  <img alt="QRCode Expo" src="./QRCode.jpg" height="300" width="300" />
 </p>
 
 # Instale
