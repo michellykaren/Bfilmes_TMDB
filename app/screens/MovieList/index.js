@@ -122,8 +122,7 @@ const MovieList = ({ navigation }) => {
         <View style={styles.loadingMore}>
           <TouchableOpacity
             style={styles.loadingButton}
-            onPress={handleLoadMore}
-          >
+            onPress={handleLoadMore}>
             <Text style={styles.loadingText}>Leia mais</Text>
           </TouchableOpacity>
         </View>
@@ -188,9 +187,9 @@ const MovieList = ({ navigation }) => {
             textError="Filme não disponível"
           />
         ) : (
-          <View style={styles.containerList}>
+          <View style={styles.containerList} >
             {results.length > 0 && (
-              <View style={styles.containerMainText}>
+              <View style={styles.containerMainText} >
                 <Text style={styles.textMain} numberOfLines={1}>
                   {typeRequest === 'discover' ? filterName : name}
                 </Text>
@@ -230,7 +229,7 @@ MovieList.navigationOptions = ({ navigation }) => {
   return {
     title: name || routeName,
     headerRight: typeRequest === 'discover' && (
-      <TouchableOpacity style={styles.buttonFilter} onPress={handleFilter}>
+      <TouchableOpacity style={styles.buttonFilter} onPress={handleFilter} >
         <Feather name="filter" size={23} color={white} />
       </TouchableOpacity>
     )

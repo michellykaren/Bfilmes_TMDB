@@ -188,53 +188,58 @@ const MovieDetails = ({ navigation }) => {
                 showImage={showImage}
                 onPress={handleImage}
               />
-              <View style={styles.containerMovieInfo}>
+              <View style={styles.containerMovieInfo} >
                 <MainInfoRow data={infosDetail} />
-                <SectionRow title="Sinopse">
-                  <ReadMore
-                    numberOfLines={10}
-                    renderTruncatedFooter={handlePress =>
-                      renderReadMoreFooter('Leia mais', handlePress)
-                    }
-                    renderRevealedFooter={handlePress =>
-                      renderReadMoreFooter('Menos', handlePress)
-                    }
-                  >
-                    <Text style={styles.subTitleInfo}>{overview}</Text>
-                  </ReadMore>
-                </SectionRow>
-                <SectionRow title="Elenco principal">
-                  <PersonListRow
-                    data={cast}
-                    type="character"
-                    keyItem="creditId"
-                    ListEmptyComponent={renderListEmpty}
-                    onTeamDetail={handlePerson}
-                    renderItem={renderItem}
-                  />
-                </SectionRow>
-                <SectionRow title="Equipe técnica principal">
-                  <PersonListRow
-                    data={crew}
-                    type="job"
-                    keyItem="creditId"
-                    ListEmptyComponent={renderListEmpty}
-                    onTeamDetail={handlePerson}
-                    renderItem={renderItem}
-                  />
-                </SectionRow>
-                <SectionRow title="Produção" isLast>
-                  <PersonListRow
-                    data={productionCompanies}
-                    type="production"
-                    keyItem="id"
-                    ListEmptyComponent={renderListEmpty}
-                    onTeamDetail={handlePerson}
-                    renderItem={renderItem}
-                  />
-                </SectionRow>
+                <View accessible={true} accessibilityLabel={"A sinopse do filme é a seguinte: "+overview}>
+                  <SectionRow  title="Sinopse" >
+                    <ReadMore
+                      numberOfLines={10}
+                      renderTruncatedFooter={handlePress =>
+                        renderReadMoreFooter('Leia mais', handlePress)
+                      }
+                      renderRevealedFooter={handlePress =>
+                        renderReadMoreFooter('Menos', handlePress)
+                      } 
+                      
+                    >
+                      <Text style={styles.subTitleInfo} // sinopse do filme
+                        >{overview}</Text>
+                    </ReadMore>
+                  </SectionRow>
+                </View>
+                  <SectionRow title="Elenco principal">
+                    <PersonListRow
+                      data={cast}
+                      type="character"
+                      keyItem="creditId"
+                      ListEmptyComponent={renderListEmpty}
+                      onTeamDetail={handlePerson}
+                      renderItem={renderItem}
+                    />
+                  </SectionRow>
+                  <SectionRow title="Equipe técnica principal">
+                    <PersonListRow
+                      data={crew}
+                      type="job"
+                      keyItem="creditId"
+                      ListEmptyComponent={renderListEmpty}
+                      onTeamDetail={handlePerson}
+                      renderItem={renderItem}
+                    />
+                  </SectionRow>
+                  <SectionRow title="Produção" isLast>
+                    <PersonListRow
+                      data={productionCompanies}
+                      type="production"
+                      keyItem="id"
+                      ListEmptyComponent={renderListEmpty}
+                      onTeamDetail={handlePerson}
+                      renderItem={renderItem}
+                    />
+                  </SectionRow>
+                
               </View>
-            </ScrollView>
+              </ScrollView>
           )}
           
         </View>
