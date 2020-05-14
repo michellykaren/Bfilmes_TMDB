@@ -11,16 +11,11 @@ import { Switch } from '../../components/common/Switch';
 
 import { getItem, setItem } from '../../utils/asyncStorage';
 
-import { darkBlue } from '../../utils/colors';
-
 import styles from './styles';
 
 const Configuration = () => {
   const [hasAdultContent, setHasAdultContent] = useState(false);
-  const hasZoom = useState(false);
-  const hasRead = useState(false);
-
-
+  
   useEffect(() => {
     (async () => {
       try {

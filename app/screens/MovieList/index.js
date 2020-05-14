@@ -31,12 +31,15 @@ const MovieList = ({ navigation }) => {
   const [results, setResults] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [page, setPage] = useState(1);
-  const [filter, setFilter] = useState({
+  const [filter, setFilter] = useState
+  ({
     filterType: 'popularity.desc',
     filterName: 'Mais populares'
   });
-  const [view, setView] = useState({ numColumns: 2, keyGrid: 1 });
-  const {
+  const [view, setView] = useState
+  ({ numColumns: 2, keyGrid: 1 });
+  const 
+  {
     params: { id = null, name = null, typeRequest = 'discover' } = {}
   } = navigation.state;
 

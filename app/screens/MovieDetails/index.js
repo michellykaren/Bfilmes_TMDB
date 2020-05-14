@@ -251,8 +251,7 @@ MovieDetails.navigationOptions = ({ navigation }) => {
     headerRight: (
       <TouchableOpacity
         style={styles.buttonShare}
-        onPress={() => handleShare(title, id)}
-      >
+        onPress={() => handleShare(title, id)}>
         <Feather name="share" size={23} color={white} />
       </TouchableOpacity>
     )

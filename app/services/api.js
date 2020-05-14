@@ -1,5 +1,7 @@
-const api = 'https://api.themoviedb.org/3';
-const key = 'c0cd7a3606ce720bebae5bc90ca829df'; //Minha chave da api, eu deveria fazer algo para esconde-la mas ela eh gratuita entao ok
+import { REACT_APP_TMDB_API_KEY, REACT_APP_TMDB_URL } from 'react-native-dotenv';
+
+const key = REACT_APP_TMDB_API_KEY; // security mesures
+const api = REACT_APP_TMDB_URL;
 
 const defaultContent = {
   api_key: key,

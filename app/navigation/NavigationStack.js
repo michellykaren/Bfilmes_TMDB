@@ -56,7 +56,7 @@ const MovieListTabBarVisible = navigation => {
     if (
       route.routeName === ROUTES.MOVIE_DETAILS ||
       route.routeName === ROUTES.MOVIE_VIDEO ||
-      route.routeName === ROUTES.SEARCH_RESULTS
+      route.routeName === ROUTES.SEARCH_RESULTS 
     ) {
       return false;
     }
@@ -64,7 +64,7 @@ const MovieListTabBarVisible = navigation => {
 
   return true;
 };
-
+// Main Navigator
 const tabNavigatorDefault = {
   [TABS.HOME]: {
     screen: MoviesStack,
@@ -83,6 +83,7 @@ const tabNavigatorDefault = {
   }
 };
 
+//menu do navegador
 const MainNavigator =
   Platform.OS === 'ios'
     ? createBottomTabNavigator(tabNavigatorDefault, {
