@@ -48,7 +48,7 @@ Clone ou baixe o projeto
 - Opções de acessibilidade
 - - [x] Aumentar e diminuir imagens
 - - [ ] Aumentar, diminuir e restaurar a fonte
-- - [ ] Uso de leitores de telas (Talkback para Android e VoiceOver para iOS)
+- - [x] Uso de leitores de telas (Talkback para Android e VoiceOver para iOS)
 - - [ ] Alto contraste
 - [x] Boa UI/UX
 - [ ] Uso do redux-saga
