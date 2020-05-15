@@ -18,9 +18,9 @@ const defaultNavigationOptions = {
   }
 };
 
-const MoviesStack = createStackNavigator(MoviesScreen, {
-  initialRouteName: ROUTES.MOVIE_LIST,
-  defaultNavigationOptions,
+const MoviesStack = createStackNavigator(MoviesScreen, { //Fornece uma maneira de seu aplicativo fazer a transição entre telas, onde cada nova tela é colocada no topo de uma pilha
+  initialRouteName: ROUTES.MOVIE_LIST, //Define a tela padrão da pilha
+  defaultNavigationOptions, //cabeçalho personalizado para todas as telas do navegador
   navigationOptions: {
     tabBarIcon: ({ tintColor }) => (
       <Feather name="home" size={24} color={bfilmes} />
@@ -103,7 +103,7 @@ const MainNavigator =
         swipeEnabled: false
       })
     : createMaterialBottomTabNavigator(tabNavigatorDefault, {
-        initialRouteName: TABS.HOME,
+        initialRouteName: TABS.HOME, //Uma barra de guias que permite alternar entre diferentes rotas
         activeColor: '#000000',
         inactiveColor: blue,
         shifting: true,
@@ -114,12 +114,12 @@ const MainNavigator =
         }
       });
 
-const AppNavigator = createSwitchNavigator(
+const AppNavigator = createSwitchNavigator( //to only ever show one screen at a time
   {
     Main: MainNavigator
   },
   {
-    initialRouteName: 'Main'
+    initialRouteName: 'Main' //The routeName for the initial tab route when first loading
   }
 );
 

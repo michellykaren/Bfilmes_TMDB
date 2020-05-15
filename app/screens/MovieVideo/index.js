@@ -13,7 +13,7 @@ const MovieVideo = ({ navigation }) => {
 
   return (
     <Screen>
-      <WebView
+      <WebView //configurar várias propriedades para o conteúdo da Web
         source={{ uri: `https://www.youtube.com/embed/${key}?start=0` }}
         startInLoadingState
         renderLoading={Loading}
